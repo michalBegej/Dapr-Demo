@@ -1,0 +1,28 @@
+name: dapr-demo
+
+extensions:
+  - name: dapr
+    components-path: components
+    services:
+      products:
+        http-port: 5100
+      orders:
+        http-port: 5200
+      payments:
+        http-port: 5300
+
+services:
+  - name: products
+    project: src/Products/Dapr.Demo.Products/Dapr.Demo.Products.csproj
+    bindings:
+      - port: 5010
+
+  - name: orders
+    project: src/Orders/Dapr.Demo.Orders/Dapr.Demo.Orders.csproj
+    bindings:
+      - port: 5020
+
+  - name: payments
+    project: src/Payments/Dapr.Demo.Payments/Dapr.Demo.Payments.csproj
+    bindings:
+      - port: 5030
