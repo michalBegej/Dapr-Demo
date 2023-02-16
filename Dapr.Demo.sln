@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7B61AAF7-84A8-420F-98E0-E0911CE811CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapr.Demo.Products", "src\Products\Dapr.Demo.Products\Dapr.Demo.Products.csproj", "{3AFFAFAE-07E3-4DA9-82D8-12A6B4A18064}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3AFFAFAE-07E3-4DA9-82D8-12A6B4A18064} = {7B61AAF7-84A8-420F-98E0-E0911CE811CA}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AFFAFAE-07E3-4DA9-82D8-12A6B4A18064}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AFFAFAE-07E3-4DA9-82D8-12A6B4A18064}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AFFAFAE-07E3-4DA9-82D8-12A6B4A18064}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AFFAFAE-07E3-4DA9-82D8-12A6B4A18064}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

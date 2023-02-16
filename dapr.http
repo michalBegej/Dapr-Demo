@@ -1,0 +1,11 @@
+@products = http://localhost:5010
+
+
+###
+GET {{products}}
+
+###
+GET {{products}}/products
+
+### 
+GET {{products}}/products/4
