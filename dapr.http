@@ -1,6 +1,7 @@
 @products = http://localhost:5010
+@productsDapr = http://localhost:5100/v1.0/invoke
 
-
+# Products service
 ###
 GET {{products}}
 
@@ -9,3 +10,6 @@ GET {{products}}/products
 
 ### 
 GET {{products}}/products/4
+
+### Products service via dapr http api 
+GET {{productsDapr}}/products/method/products
