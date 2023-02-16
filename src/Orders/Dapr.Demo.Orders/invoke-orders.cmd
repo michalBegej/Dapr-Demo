@@ -1,0 +1,1 @@
+dapr invoke --app-id orders --method orders --verb POST --data "{\"id\":1,\"productIds\":[1,2,3]}"

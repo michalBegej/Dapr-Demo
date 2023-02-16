@@ -13,3 +13,29 @@ GET {{products}}/products/4
 
 ### Products service via dapr http api 
 GET {{productsDapr}}/products/method/products
+
+
+@orders = http://localhost:5020
+@ordersDapr = http://localhost:5200/v1.0/invoke
+
+###
+
+GET {{orders}}
+
+###
+POST {{orders}}/orders
+Content-Type: application/json
+
+{
+    "id": 1,
+    "productIds": [1,2,3]
+}
+
+###
+POST {{ordersDapr}}/orders/method/orders
+Content-Type: application/json
+
+{
+    "id": 1,
+    "productIds": [1,2,3]
+}
