@@ -1,7 +1,8 @@
+###================================Products
 @products = http://localhost:5010
 @productsDapr = http://localhost:5100/v1.0/invoke
 
-# Products service
+
 ###
 GET {{products}}
 
@@ -15,11 +16,12 @@ GET {{products}}/products/4
 GET {{productsDapr}}/products/method/products
 
 
+###==============================Orders
+
 @orders = http://localhost:5020
 @ordersDapr = http://localhost:5200/v1.0/invoke
 
 ###
-
 GET {{orders}}
 
 ###
@@ -31,7 +33,7 @@ Content-Type: application/json
     "productIds": [1,2,3]
 }
 
-###
+### dapr API
 POST {{ordersDapr}}/orders/method/orders
 Content-Type: application/json
 
@@ -39,3 +41,11 @@ Content-Type: application/json
     "id": 1,
     "productIds": [1,2,3]
 }
+
+
+###======================================Payments
+
+@payments = http://localhost:5030
+
+###
+GET {{payments}}
